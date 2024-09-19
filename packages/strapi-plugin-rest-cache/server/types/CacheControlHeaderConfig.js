@@ -3,9 +3,6 @@
 const { CacheControlResponseHeaderConfig } = require("./CacheControlResponseHeaderConfig");
 
 
-/**
- * CacheControlHeaderConfig.js
- */
 class CacheControlHeaderConfig {
 
     /**
