@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-rest-cache",
-  "version": "4.2.9",
+  "name": "strapi-plugin-rest-cache-vf",
+  "version": "4.2.13",
   "description": "Speed-up HTTP requests with LRU cache",
   "license": "MIT",
   "strapi": {
@@ -45,7 +45,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strapi-community/strapi-plugin-rest-cache.git",
+    "url": "git+https://github.com/vegan-friendly/strapi-plugin-rest-cache.git",
     "directory": "packages/strapi-plugin-rest-cache"
   },
   "bugs": {
@@ -67,7 +67,7 @@
     "debug": "^4.3.4",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
-    "strapi-provider-rest-cache-memory": "^4.2.9"
+    "strapi-provider-rest-cache-memory-vf": "^4.2.13"
   },
   "devDependencies": {
     "@strapi/strapi": "^4.11.7",
