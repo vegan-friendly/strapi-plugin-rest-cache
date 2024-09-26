@@ -2,7 +2,7 @@
 
 const cacheManager = require("cache-manager");
 const couchbaseStore = require("cache-manager-couchbase");
-const { CacheProvider } = require("strapi-plugin-rest-cache/server/types");
+const { CacheProvider } = require("@vegan-friendly/strapi-plugin-rest-cache/server/types");
 
 class CouchbaseCacheProvider extends CacheProvider {
   constructor(options) {
