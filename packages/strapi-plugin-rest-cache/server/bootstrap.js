@@ -18,7 +18,7 @@ const createProvider = async (providerConfig, { strapi }) => {
 
   let modulePath;
   try {
-    modulePath = require.resolve(`strapi-provider-rest-cache-${providerName}`);
+    modulePath = require.resolve(`@vegan-friendly/strapi-provider-rest-cache-${providerName}`);
   } catch (error) {
     if (error.code === 'MODULE_NOT_FOUND') {
       modulePath = providerName;
@@ -32,7 +32,7 @@ const createProvider = async (providerConfig, { strapi }) => {
     provider = require(modulePath);
   } catch (err) {
     throw new Error(
-      `Could not load REST Cache provider "${providerName}". You may need to install a provider plugin "yarn add strapi-provider-rest-cache-${providerName}".`
+      `Could not load REST Cache provider "${providerName}". You may need to install a provider plugin "yarn add @vegan-friendly/strapi-provider-rest-cache-${providerName}".`
     );
   }
 

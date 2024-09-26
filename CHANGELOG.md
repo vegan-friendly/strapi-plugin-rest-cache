@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.0](https://github.com/vegan-friendly/strapi-plugin-rest-cache/compare/v4.2.9...v4.3.0) (2024-09-26)
+
+### Features
+
+* allow setting cache-control response header
+
 ## [4.2.8](https://github.com/strapi-community/strapi-plugin-rest-cache/compare/v4.2.7...v4.2.8) (2023-07-27)
 
 ### Bug Fixes

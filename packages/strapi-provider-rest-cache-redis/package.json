@@ -1,6 +1,6 @@
 {
-  "name": "strapi-provider-rest-cache-redis",
-  "version": "4.2.9",
+  "name": "@vegan-friendly/strapi-provider-rest-cache-redis",
+  "version": "4.3.0",
   "description": "Speed-up HTTP requests with LRU cache",
   "license": "MIT",
   "strapi": {
@@ -32,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strapi-community/strapi-plugin-rest-cache.git",
+    "url": "git+https://github.com/vegan-friendly/strapi-plugin-rest-cache.git",
     "directory": "packages/strapi-provider-rest-cache-redis"
   },
   "bugs": {
@@ -58,12 +58,12 @@
   },
   "devDependencies": {
     "@strapi/strapi": "^4.11.7",
-    "strapi-plugin-redis": "^1.0.1",
-    "strapi-plugin-rest-cache": "^4.2.9"
+    "@vegan-friendly/strapi-plugin-redis": "^4.3.0",
+    "@vegan-friendly/strapi-plugin-rest-cache": "^4.3.0"
   },
   "peerDependencies": {
     "@strapi/strapi": "^4.0.0",
-    "strapi-plugin-rest-cache": "^4.0.0"
+    "@vegan-friendly/strapi-plugin-rest-cache": "^4.3.0"
   },
   "engines": {
     "node": ">=14.0.0",
