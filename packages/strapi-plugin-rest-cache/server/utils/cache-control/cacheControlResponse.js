@@ -18,7 +18,8 @@ function setCacheControlHeader(ctx, cacheControlHeaderConfig, cacheRouteConfig) 
         return;
     }
 
-    const { hitpass, maxAge, keys } = cacheRouteConfig;
+    let { maxAge } = cacheRouteConfig;
+    maxAge = !maxAge ? maxAge : maxAge / 1000; //maxAge is in milliseconds in configuration
 
     let cacheControlHeader = ctx.response.get('Cache-Control');
 

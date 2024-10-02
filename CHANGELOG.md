@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.2](https://github.com/vegan-friendly/strapi-plugin-rest-cache/compare/v4.3.1...v4.3.2) (2024-10-02)
+
+### Bug Fixes
+
+* fix maxAge in response headers, when config cacheControlHeader.response.maxAge=CONFIG -
+the configured maxAge is in milliseconds, and the response header needs to be in seconds.
+
 ## [4.3.1](https://github.com/vegan-friendly/strapi-plugin-rest-cache/compare/v4.2.9...v4.3.1) (2024-09-26)
 
 ### Features
