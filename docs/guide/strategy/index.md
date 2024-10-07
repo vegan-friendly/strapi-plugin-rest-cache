@@ -136,6 +136,7 @@ If omitted (default) - ignore `Cache-Control` header in requests and do not add 
   response: {
     staleWhileRevalidate: 3600,
     maxAge: 'CONFIG',
+    sMaxAge: 86400,
   }
 }
 ```

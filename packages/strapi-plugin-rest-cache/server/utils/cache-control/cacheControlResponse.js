@@ -1,7 +1,7 @@
 'use strict';
 
 const { CacheControlHeaderConfig, CacheRouteConfig } = require("../../types");
-const { CacheControlResponseMaxAge } = require("../../types/CacheControlResponseHeaderConfig");
+const { CacheControlResponseMaxAge, CacheControlResponseSMaxAge } = require("../../types/CacheControlResponseHeaderConfig");
 const debug = require('debug')('strapi:strapi-plugin-rest-cache');
 
 
@@ -30,11 +30,20 @@ function setCacheControlHeader(ctx, cacheControlHeaderConfig, cacheRouteConfig) 
         directivesToSet.set("stale-while-revalidate", staleWhileRevalidateSeconds);
     }
 
+    //max-age
     if (maxAge && responseConfig.maxAge == CacheControlResponseMaxAge.CONFIG) {
         directivesToSet.set("max-age", maxAge);
     }
     if (Number.isInteger(responseConfig.maxAge)) {
         directivesToSet.set("max-age", responseConfig.maxAge);
+    }
+
+    //s-max-age
+    if (maxAge && responseConfig.sMaxAge == CacheControlResponseSMaxAge.MAX_AGE) {
+        directivesToSet.set("s-max-age", maxAge);
+    }
+    if (Number.isInteger(responseConfig.sMaxAge)) {
+        directivesToSet.set("s-max-age", responseConfig.sMaxAge);
     }
 
     debug("cacheControlHeader before:" + cacheControlHeader);

@@ -17,7 +17,6 @@
 
 - [🚦 Current Status](#-current-status)
 - [✨ Features](#-features)
-- [🤔 Motivation](#-motivation)
 - [🖐 Requirements](#-requirements)
 - [🚚 Getting Started](#-getting-started)
 - [Contributing](#contributing)
