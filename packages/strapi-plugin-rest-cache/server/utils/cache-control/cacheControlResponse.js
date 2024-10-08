@@ -40,10 +40,10 @@ function setCacheControlHeader(ctx, cacheControlHeaderConfig, cacheRouteConfig) 
 
     //s-max-age
     if (maxAge && responseConfig.sMaxAge == CacheControlResponseSMaxAge.MAX_AGE) {
-        directivesToSet.set("s-max-age", maxAge);
+        directivesToSet.set("s-maxage", maxAge);
     }
     if (Number.isInteger(responseConfig.sMaxAge)) {
-        directivesToSet.set("s-max-age", responseConfig.sMaxAge);
+        directivesToSet.set("s-maxage", responseConfig.sMaxAge);
     }
 
     debug("cacheControlHeader before:" + cacheControlHeader);

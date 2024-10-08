@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [4.3.3](https://github.com/vegan-friendly/strapi-plugin-rest-cache/compare/v4.3.2...v4.3.3) (2024-10-02)
+## [4.3.4](https://github.com/vegan-friendly/strapi-plugin-rest-cache/compare/v4.3.2...v4.3.4) (2024-10-02)
 
 ### Features
 
